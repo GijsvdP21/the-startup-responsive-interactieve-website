@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link rel="stylesheet" href="style/style.css">
-    <script src="script/script.js"></script>
+    <script defer src="script/script.js"></script>
     <title>The Valley - Nike</title>
 </head>
 
@@ -90,7 +98,7 @@
                 <p>Not only were the paper catalogues difficult to stand out in and unwieldy to get to the client's
                     table, it is also quite the waste of paper.</p>
             </div>
-            <div class="div-facts">
+            <div class="div-facts third-fact">
                 <h4>1.942</h4>
                 <p>Kit designs shares each month</p>
                 <p>From players to coaches, professionals to students. Everyone is creating kits to share in public or
@@ -179,7 +187,7 @@
         </section>
         <section class="contacts">
             <h4>Want to know what digital can do for your service?</h4>
-            <button>Contact us</button>
+            <button id="open">Contact us</button>
             <div class="persons">
                 <div class="Auke">
                     <img src="assets/auke-meijer.png" alt="Auke Meijer">
@@ -195,11 +203,42 @@
                 </div>
             </div>
         </section>
+        <div class="modal_container" id="modal_container">
+            <div class="modal">
+                <form>
+                    <h4>Contact</h4>
+                    <p class="form-intro">Please contact us if you have any questions or want more information</p>
+                    <label>
+                        <input type="text" placeholder="First name">
+                    </label>
+                    <label>
+                        <input type="text" placeholder="Last name">
+                    </label>
+                    <label>
+                        <input type="text" placeholder="Email address">
+                    </label>
+                    <label>
+                        <textarea class="add-com" placeholder="additional comments"></textarea>
+                    </label>
+                    <p class="correct">*Please fill in all the fields correctly</p>
+                    <div class="actions">
+                        <button type="button" id="close">
+                            Close
+                        </button>
+                        <button type="button" id="send">
+                            send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
         <section></section>
+
     </main>
     <footer>
 
     </footer>
+
 </body>
 
 </html>

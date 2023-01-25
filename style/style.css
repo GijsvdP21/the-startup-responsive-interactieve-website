@@ -8,6 +8,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat' serif;
 }
 
 section {
@@ -104,6 +105,10 @@ h4 {
     height: 13rem;
     margin: .5rem 2rem .5rem 2rem;
     padding: 1rem;
+}
+
+.third-fact {
+    height: 15rem;
 }
 
 .div-facts h4 {
@@ -247,7 +252,7 @@ h4 {
 
 button {
     background-color: var(--valley-red);
-    width: 7rem;
+    width: 5rem;
     height: 2rem;
     box-shadow: none;
     border: none;
@@ -278,4 +283,81 @@ button {
 
 .email {
     margin: .5rem 0 0 0;
+}
+
+.modal_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 20000;
+    transition: opacity 0.5s ease;
+}
+
+.modal_container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    background-color: var(--valley-white);
+    border-radius: 5px;
+    padding: 30px 50px;
+    width: 90%;
+    max-width: 22rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-intro {
+    margin: .5rem 0 1rem 0;
+    padding: 0;
+}
+
+#send {
+    background-color: rgb(28, 142, 28);
+}
+
+.actions {
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #7E7E7E;
+    margin: 1rem 0 1rem 0;
+    background-color: var(--valley-white);
+}
+
+.add-com {
+    position: relative;
+    border: 2px solid #7E7E7E;
+    height: 5rem;
+    width: 100%;
+    margin: 1rem 0 0 0;
+}
+
+input::placeholder {
+    color: #7E7E7E;
+}
+
+.add-com::placeholder {
+    top: 0;
+    position: absolute;
+}
+
+.correct {
+    color: var(--valley-red);
+    margin: 0;
+    font-size: 12px;
 }
