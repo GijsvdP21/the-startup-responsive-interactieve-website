@@ -1,5 +1,8 @@
 :root {
-    --c-lightgrey: #F4F4F5;
+    --valley-grey: #F4F4F5;
+    --valley-black: #222222;
+    --valley-red: #E02C35;
+    --valley-white: #FDFAF6;
 }
 
 * {
@@ -19,7 +22,7 @@ section {
 }
 
 .background-color {
-    background-color: red;
+    background-color: var(--valley-red);
     height: 3.5rem;
     position: fixed;
     top: 0;
@@ -50,14 +53,14 @@ section {
 }
 
 .tags div {
-    background-color: var(--c-lightgrey);
+    background-color: var(--valley-grey);
     border: 1px solid darkgray;
     padding: 3px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .hamburger {
-    fill: white;
+    fill: var(--valley-white);
     cursor: pointer;
 }
 
@@ -71,16 +74,16 @@ section {
 }
 
 p {
-    font-size: 13px;
+    font-size: 16px;
     margin: 1rem 2rem 1rem 0.5rem;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 36px;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 32px;
 }
 
 .facts {
@@ -96,15 +99,15 @@ h4 {
     flex-direction: column;
     align-items: flex-start;
     background-color: #222222;
-    color: white;
+    color: var(--valley-white);
     width: 14rem;
-    height: 12rem;
+    height: 13rem;
     margin: .5rem 2rem .5rem 2rem;
     padding: 1rem;
 }
 
 .div-facts h4 {
-    font-size: 35px;
+    font-size: 37px;
 }
 
 .div-facts p {
@@ -121,7 +124,7 @@ h4 {
 }
 
 .text-below-img {
-    font-size: 10px;
+    font-size: 12px;
     margin: 0.2rem 0rem 1rem 0rem;
     padding: 0 1rem;
 }
@@ -147,7 +150,7 @@ h4 {
     background-color: #eee;
     text-decoration: none;
     padding: 1rem;
-    color: black;
+    color: var(--valley-black);
     border-radius: 10px 10px 0 0;
 }
 
@@ -163,11 +166,9 @@ h4 {
     transform: scale(1);
     transition: transform 0.5s;
     position: relative;
-
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100px;
 }
 
 #slide-1 img {
@@ -193,12 +194,12 @@ h4 {
 }
 
 .quote-txt {
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .quote-name {
-    color: red;
-    font-size: 11px;
+    color: var(--valley-red);
+    font-size: 13px;
 }
 
 .two-pictures {
@@ -216,6 +217,10 @@ h4 {
     width: 32%;
 }
 
+.three-pics {
+    padding: 0;
+}
+
 .football-man {
     width: 100%;
 }
@@ -228,4 +233,49 @@ h4 {
 
 .women-football img {
     width: 48%;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--valley-grey);
+    margin: 0;
+    padding: 2rem 2rem;
+}
+
+button {
+    background-color: var(--valley-red);
+    width: 7rem;
+    height: 2rem;
+    box-shadow: none;
+    border: none;
+    border-radius: 18px 18px 18px 18px;
+    color: var(--valley-white);
+    cursor: pointer;
+}
+
+.persons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.persons img {
+    width: 100%;
+}
+
+.naam {
+    color: var(--valley-red);
+    margin: .2rem 0 0 0;
+}
+
+.functie {
+    font-weight: bold;
+    margin: .2rem 0 0 0;
+}
+
+.email {
+    margin: .5rem 0 0 0;
 }
